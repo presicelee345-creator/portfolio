@@ -834,7 +834,7 @@ body {
     <div class="win-body">
       <div class="win-h1">Course Reflections</div>
       <div class="win-h2">Overview</div>
-      <p style="margin-bottom:18px;">Does it update .</p>
+      <p style="margin-bottom:18px;">From my time at Winthrop, I gained experience working with </p>
       <div class="win-h2">Courses</div>
       <div class="course-card">
         <div class="course-name">MGMT 341 - Business Information Systems</div>
@@ -882,12 +882,12 @@ body {
         <div style="flex: 1;">
           <div class="win-h1" style="margin-top: 0;">Presice Lee</div>
           <p style="font-size:14px;font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--ink);margin-bottom:10px;">
-            "Bridging the gap between business administration and technical innovation."
+            "Everything is a win when the goal is experience."
           </p>
         </div>
       </div>
       
-      <p>I am a Computer Information Systems student with a minor in Accounting, passionate about learning. I am orginally from Rembert, SC and I have 4 siblings. I enjoy spending my free time hiking, reading, and going to the beach. I am working on becoming a person who enjoys challenges and I love meeting new people. </p>
+      <p>I am a Computer Information Systems major with a minor in Accounting, passionate about learning. I am orginally from Rembert, SC and I have 4 siblings. I enjoy spending my free time hiking, reading, and going to the beach. I am working on becoming a person who enjoys challenges and I love meeting new people. </p>
       
       <div class="divider"></div>
       
@@ -1070,7 +1070,7 @@ function addTb(id) {
 function removeTb(id) { const t=document.getElementById('tbi-'+id); if(t) t.remove(); }
 
 function handlePicUpload(event) {
-  const file = event.target.files[0];
+const files = Array.from(event.target.files).slice(0, 5);
   if (file) {
     const reader = new FileReader();
     reader.onload = function(e) {
